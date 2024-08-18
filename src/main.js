@@ -141,12 +141,12 @@ const Main = () => {
     <div className="app-container">
       {message ? (
         <>
-          <div className="message">{message}</div>
+          <div className="message">I knew u would say yes, meet me at 8pm, UB city</div>
           {showConfetti && <Confetti />}
         </>
       ) : (
         <>
-          <div className="message">Click Yes or No</div>
+          <div className="message">Would you like to go on a date with me?</div>
           <div className="button-box">
             <button className="yes-button" onClick={handleYesClick}>Yes</button>
             <button 
