@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #7161ef, #a38dff);
+}
+
+.app-container {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.message {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.button-box {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 30px;
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+
+.yes-button, .no-button {
+  font-size: 18px;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.yes-button {
+  background-color: #4CAF50;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.yes-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.no-button {
+  background-color: #f44336;
+  color: white;
+  position: absolute;
+  /* Initially absolute, will be repositioned dynamically */
+}
+
+.no-button:hover {
+  background-color: #e53935;
+}
+
+.footer {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #888;
+  font-weight: 500;
 }
