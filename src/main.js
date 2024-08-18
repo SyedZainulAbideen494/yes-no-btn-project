@@ -35,7 +35,7 @@ const Main = () => {
 
   // Handle Yes button click
   const handleYesClick = () => {
-    setMessage(params.msg);
+    setMessage('i knew it, meet u at starbucks in Cunningham road');
     setShowConfetti(true);
     setTimeout(() => setShowConfetti(false), 5000); // Hide confetti after 5 seconds
   };
